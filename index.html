@@ -3,7 +3,22 @@ layout: default
 title: Home
 ---
 
-<h1>{{ "Hello World!" | downcase }}</h1>
 
-
-<br>
+<ul>
+    {% for one_case in site.data.cases %}
+        <!-- {{ one_case.chapter_id }}
+        {{ one_case.chapter_name }}
+        {{ one_case.case_id }}
+        {{ one_case.case_name }} -->
+        <li>
+            <a href="/case/{{ one_case.case_id }}.html">
+                <span>
+                    {{ one_case.chapter_id }}
+                    {{ one_case.chapter_name }} 
+                    - 
+                    {{ one_case.case_name }}
+                </span>
+            </a>
+        </li>
+    {% endfor %}
+</ul>
