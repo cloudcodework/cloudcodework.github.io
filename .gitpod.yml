@@ -22,6 +22,7 @@ vscode:
     - timonwong.shellcheck
     - hexcodetechnologies.vscode-prettydiff
     - sissel.shopify-liquid
+    - mechatroner.rainbow-csv
 
 # List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
 ports:
