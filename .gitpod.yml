@@ -18,7 +18,7 @@ vscode:
     - foxundermoon.shell-format
     - timonwong.shellcheck
     - hexcodetechnologies.vscode-prettydiff
-    - neilding.language-liquid
+    - sissel.shopify-liquid
 
 # List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
 ports:
