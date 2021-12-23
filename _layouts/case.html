@@ -2,4 +2,17 @@
 layout: default
 ---
 
+<div>
+    {% assign case_id = page.url | remove: '/case/' | remove: '.html' %}
+
+    {% for one_case in site.data.cases %}
+        {% if one_case.case_id == case_id %}
+            <p>chapter id : {{ one_case.chapter_id }}</p>
+            <p>chapter name : {{ one_case.chapter_name }}</p>
+            <p>case id : {{ one_case.case_id }}</p>
+            <p>case name : {{ one_case.case_name }}</p>
+        {% endif %}
+    {% endfor %}
+</div>
+
 {{ content }}
