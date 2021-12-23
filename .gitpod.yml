@@ -14,6 +14,13 @@ tasks:
       bundle install
       jekyll serve
 
+  - name: "init git for gh-pages"
+    command: |
+      rm -rf _site
+      mkdir -p _site/
+      git clone -b gh-pages `git config remote.origin.url` _site
+      git config pull.rebase false
+
 vscode:
   extensions:
     - github.copilot
@@ -24,6 +31,7 @@ vscode:
     - sissel.shopify-liquid
     - mechatroner.rainbow-csv
     - ms-python.python
+    - mervin.markdown-formatter
 
 # List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
 ports:
