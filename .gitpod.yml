@@ -15,19 +15,21 @@ vscode:
   extensions:
     - ms-ceintl.vscode-language-pack-zh-hans
     - github.copilot
-    - github.vscode-pull-request-github
     - michelemelluso.gitignore
     - gitpod.gitpod-remote-ssh
     - dedsec727.jekyll-run
     - lonefy.vscode-js-css-html-formatter
-    - sissel.shopify-liquid
     - mervin.markdown-formatter
     - esbenp.prettier-vscode
     - rebornix.ruby
+    - mbessey.vscode-rufo
     - foxundermoon.shell-format
     - timonwong.shellcheck
+    - hexcodetechnologies.vscode-prettydiff
+    - redhat.vscode-yaml
+    - neilding.language-liquid
     - wingrunr21.vscode-ruby
-    - mbessey.vscode-rufo
+    - github.vscode-pull-request-githu
 
 # List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
 ports:
