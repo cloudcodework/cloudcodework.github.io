@@ -1,0 +1,34 @@
+# List the start up tasks. Learn more https://www.gitpod.io/docs/config-start-tasks/
+tasks:
+  - name: "Install jekyll"
+    init: |
+      - ruby -v
+      - gem -v
+      - gcc -v
+      - g++ -v
+      - make -v
+      - gem install jekyll bundler
+      - bundle install
+    command: jekyll serve
+
+# List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
+ports:
+  - port: 4000
+    onOpen: open-preview
+
+vscode:
+  extensions:
+    - ms-ceintl.vscode-language-pack-zh-hans
+    - github.copilot
+    - github.vscode-pull-request-github
+    - michelemelluso.gitignore
+    - gitpod.gitpod-remote-ssh
+    - dedsec727.jekyll-run
+    - lonefy.vscode-js-css-html-formatter
+    - sissel.shopify-liquid
+    - mervin.markdown-formatter
+    - esbenp.prettier-vscode
+    - rebornix.ruby
+    - foxundermoon.shell-format
+    - timonwong.shellcheck
+    - wingrunr21.vscode-ruby
