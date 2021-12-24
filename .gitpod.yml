@@ -32,6 +32,7 @@ vscode:
     - mechatroner.rainbow-csv
     - ms-python.python
     - mervin.markdown-formatter
+    - python.vscode-pylance
 
 # List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
 ports:
