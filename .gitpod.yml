@@ -1,5 +1,12 @@
 # List the start up tasks. Learn more https://www.gitpod.io/docs/config-start-tasks/
 tasks:
+  - name: "init git for gh-pages"
+    command: |
+      rm -rf _site
+      mkdir -p _site/
+      git clone -b gh-pages `git config remote.origin.url` _site
+      git config pull.rebase false
+
   - name: "Install shfmt"
     command: brew install shfmt
 
@@ -13,13 +20,6 @@ tasks:
       gem install jekyll bundler
       bundle install
       jekyll serve
-
-  - name: "init git for gh-pages"
-    command: |
-      rm -rf _site
-      mkdir -p _site/
-      git clone -b gh-pages `git config remote.origin.url` _site
-      git config pull.rebase false
 
 vscode:
   extensions:
