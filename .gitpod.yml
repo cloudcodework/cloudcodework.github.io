@@ -9,8 +9,9 @@ tasks:
       exit
 
   - name: "Install shfmt"
-    command: brew install shfmt
-    exit
+    command: |
+      brew install shfmt
+      exit
 
   - name: "Install jekyll"
     command: |
