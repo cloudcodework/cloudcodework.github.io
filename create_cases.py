@@ -6,6 +6,7 @@ import qrcode
 host_name = "case.artificial-intelligence-algorithm.site"
 qrcode_dir = 'assets/images/qrcode'
 
+
 def create_case_page(case_id):
     case_file_name = f'case/{case_id}.html'
     with open(case_file_name, 'w') as case_file:
@@ -20,7 +21,6 @@ def create_qr_code(case_id):
     url = f'https://{host_name}/case/{case_id}'
     img = qrcode.make(url)
 
-    
     qrcode_file_name = f'{qrcode_dir}/{case_id}.png'
     with open(qrcode_file_name, 'wb') as qrcode_file:
         img.save(qrcode_file)
