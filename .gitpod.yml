@@ -13,6 +13,12 @@ tasks:
       brew install shfmt
       exit
 
+  - name: "Install python requirements"
+    command: |
+      pip install -U pip
+      pip install -r requirements.txt
+      exit
+
   - name: "Install jekyll"
     command: |
       ruby -v
