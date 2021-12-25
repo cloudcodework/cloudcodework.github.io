@@ -7,92 +7,94 @@ layout: default
     {% assign case_id = page.url | remove: '/case/' | remove: '.html' %}
 
     {% for one_case in site.data.cases %}
-        {% if one_case.case_id == case_id %}
+    {% if one_case.case_id == case_id %}
 
-            <script>
-                document.title = '{{ one_case.case_id }} {{ one_case.case_name }} -《人工智能算法——Pythob语言版》在线编程平台';
-            </script>
+    <script>
+        document.title = '{{ one_case.case_id }} {{ one_case.case_name }} -《人工智能算法——Pythob语言版》在线编程平台';
+    </script>
 
-            <div class="container-fluid">
+    <div class="container-fluid">
 
-                <div class="row">
-                    <div class="col-md-1 col-lg-2 hidden-xs">
-                    </div>
-
-                    <div class="col-md-10 col-lg-8">
-                        <p>&nbsp;</p>
-
-                        <p>
-                            <h1>{{ one_case.chapter_id }}&nbsp;{{ one_case.chapter_name }}</h1>
-                            <h2>{{ one_case.case_id }}&nbsp;{{ one_case.case_name }}</h2>
-                        <p>
-
-                        <div>
-                            <img src="{{ site.case_orgnization_url }}/{{ one_case.case_id }}/raw/main/2_算法演示/demo.gif" class="img-responsive" alt="Responsive image">
-                        </div>
-
-                        <p>&nbsp;</p>
-
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h3 class="panel-title">在线案例</h3>
-                            </div>
-                            <div class="panel-body">
-                                <p>
-                                    <a type="button" class="btn btn btn-warning" 
-                                        href="https://gitpod.io#{{ site.case_orgnization_url }}/{{ one_case.case_id }}/">
-                                        点击打开在线案例
-                                    </a>
-                                    <a type="button" class="btn btn-primary" 
-                                        href="{{ site.case_orgnization_url }}/{{ one_case.case_id }}/">
-                                        点击查看在线案例Github仓库
-                                    </a>
-                                </p>
-
-                                <p class="text-info">
-                                    <p>注:</p>
-
-                                    <p>
-                                        一、按下“点击打开在线案例”按钮，可以在浏览器中通过Gitpod直接打开、编辑、运行，并进行自测练习。
-                                    </p>
-
-                                    <p>
-                                        二、按下“点击查看在线案例Github仓库”按钮，您可以在GitHub上查看案例代码，本案例使用MIT开源协议，您可以自行拷贝、修改、分享。
-                                    </p>
-
-                                    <p>
-                                        三、如果您需要保存您编写的代码，请先在GitHub上<a href="https://docs.github.com/cn/get-started/quickstart/fork-a-repo">Fork</a>本案例，
-                                        并通过Gitpod在线开发环境打开您Fork的案例副本，以便于保存您的自测练习。
-                                        <br>
-                                        操作步骤如下：
-                                        <br>
-                                        1. 在GitHub上Fork本案例
-                                        <br>
-                                        2. 在您Fork的案例副本的URL前加上<code>https://gitpod.io#</code>前缀。例如你的案例副本仓库URL是
-                                        <code>https://github.com/yourname/yourproject</code>，那么加上前缀后是
-                                        <code>https://gitpod.io#https://github.com/yourname/yourproject</code>，将此URL粘贴到浏览器地址栏，即可在Gitpod中打开您的案例副本。
-                                        （更多信息请参阅Gitpod帮助文档<a href="https://www.gitpod.io/docs/getting-started#start-your-first-workspace">
-                                        https://www.gitpod.io/docs/getting-started#start-your-first-workspace</a>）
-                                    </p>
-                                    
-                                    <p>
-                                        四、建议在平板电脑、PC等大屏幕设备上使用本在线练习。
-                                    </p>
-                                </P
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-1 col-lg-2 hidden-xs">
-                    </div>
-                </div>
+        <div class="row">
+            <div class="col-md-1 col-lg-2 hidden-xs">
             </div>
 
+            <div class="col-md-10 col-lg-8">
+                <p>&nbsp;</p>
+
+                <p>
+                <h1>{{ one_case.chapter_id }}&nbsp;{{ one_case.chapter_name }}</h1>
+                <h2>{{ one_case.case_id }}&nbsp;{{ one_case.case_name }}</h2>
+                <p>
+
+                <div>
+                    <img src="{{ site.case_orgnization_url }}/{{ one_case.case_id }}/raw/main/2_算法演示/demo.gif"
+                        class="img-responsive" alt="Responsive image">
+                </div>
+
+                <p>&nbsp;</p>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">在线案例</h3>
+                    </div>
+                    <div class="panel-body">
+                        <p>
+                            <a type="button" class="btn btn btn-warning"
+                                href="https://gitpod.io#{{ site.case_orgnization_url }}/{{ one_case.case_id }}/">
+                                点击打开在线案例
+                            </a>
+                            <a type="button" class="btn btn-primary"
+                                href="{{ site.case_orgnization_url }}/{{ one_case.case_id }}/">
+                                点击查看在线案例Github仓库
+                            </a>
+                        </p>
+
+                        <p class="text-info">
+                        <p>注:</p>
+
+                        <p>
+                            一、按下“点击打开在线案例”按钮，可以在浏览器中通过Gitpod直接打开、编辑、运行，并进行自测练习。
+                        </p>
+
+                        <p>
+                            二、按下“点击查看在线案例Github仓库”按钮，您可以在GitHub上查看案例代码，本案例使用MIT开源协议，您可以自行拷贝、修改、分享。
+                        </p>
+
+                        <p>
+                            三、如果您需要保存您编写的代码，请先在GitHub上<a
+                                href="https://docs.github.com/cn/get-started/quickstart/fork-a-repo">Fork</a>本案例，
+                            并通过Gitpod在线开发环境打开您Fork的案例副本，以便于保存您的自测练习。
+                            <br>
+                            操作步骤如下:
+                            <br>
+                            1. 在GitHub上Fork本案例
+                            <br>
+                            2. 在您Fork的案例副本的URL前加上<code>https://gitpod.io#</code>前缀。例如你的案例副本仓库URL是
+                            <code>https://github.com/yourname/yourproject</code>，那么加上前缀后是
+                            <code>https://gitpod.io#https://github.com/yourname/yourproject</code>，将此URL粘贴到浏览器地址栏，即可在Gitpod中打开您的案例副本。
+                            （更多信息请参阅Gitpod帮助文档<a
+                                href="https://www.gitpod.io/docs/getting-started#start-your-first-workspace">
+                                https://www.gitpod.io/docs/getting-started#start-your-first-workspace</a>）
+                        </p>
+
+                        <p>
+                            四、建议在平板电脑、PC等大屏幕设备上使用本在线练习。
+                        </p>
+                        </P </div>
+                    </div>
+                </div>
+
+                <div class="col-md-1 col-lg-2 hidden-xs">
+                </div>
+            </div>
+        </div>
+
         {% endif %}
-    {% endfor %}
+        {% endfor %}
 
-</div>
+    </div>
 
 
 
-{{ content }}
+    {{ content }}
