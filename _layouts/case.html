@@ -9,6 +9,10 @@ layout: default
     {% for one_case in site.data.cases %}
         {% if one_case.case_id == case_id %}
 
+            <script>
+                document.title = '{{ one_case.case_id }} {{ one_case.case_name }} -《人工智能算法——Pythob语言版》在线编程平台';
+            </script>
+
             <div class="container-fluid">
 
                 <div class="row">
