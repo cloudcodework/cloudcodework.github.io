@@ -14,20 +14,18 @@ title: 《人工智能算法——Python语言版》在线编程平台和案例�
         document.title = '{{ one_case.case_id }} {{ one_case.case_name }} - 《人工智能算法——Python语言版》在线编程平台和案例库';
     </script>
 
-    <div class="container-fluid">
+    <div class="container">
+
+        <div class="page-header">
+            <h1>{{ one_case.chapter_id }}&nbsp;{{ one_case.chapter_name }}</h1>
+            <h2>{{ one_case.case_id }}&nbsp;{{ one_case.case_name }}</h2>
+        </div>
 
         <div class="row">
             <div class="col-md-1 col-lg-2 hidden-xs">
             </div>
 
-            <div class="col-md-10 col-lg-8">
-                <p>&nbsp;</p>
-
-                <p>
-                <h1>{{ one_case.chapter_id }}&nbsp;{{ one_case.chapter_name }}</h1>
-                <h2>{{ one_case.case_id }}&nbsp;{{ one_case.case_name }}</h2>
-                <p>
-
+            <div class="col-xs-12 col-sm-12 col-md-10 col-lg-8">
                 <div>
                     <img src="{{ site.case_orgnization_url }}/{{ one_case.case_id }}/raw/main/2_算法演示/demo.gif"
                         class="img-responsive" alt="Responsive image">
