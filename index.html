@@ -25,9 +25,10 @@ title: 《人工智能算法——Python语言版》在线编程平台和案例�
                 <a href="/case/{{one_case.case_id}}.html">
                     <img class="img-responsive" src="/assets/images/qrcode/{{ one_case.case_id }}.png" alt="QR_Code">
                 </a>
-                <p class="text-center"><span class="badge">序号 {{ count }}</span></p>
+                <!-- <p class="text-center"><span class="badge">序号 {{ count }}</span></p> -->
+                <p class="text-center"><span class="badge">{{ one_case.case_id }}</span></p>
                 <div class="caption">
-                    <h4 class="text-center">{{ one_case.case_id }} {{ one_case.case_name }}</h4>
+                    <h4 class="text-center"> {{ one_case.case_name }}</h4>
                     <p>
                         <a href="https://case.artificial-intelligence-algorithm.site/case/{{one_case.case_id}}.html">
                             <p class="text-center">
