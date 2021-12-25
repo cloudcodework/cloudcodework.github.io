@@ -6,9 +6,11 @@ tasks:
       mkdir -p _site/
       git clone -b gh-pages `git config remote.origin.url` _site
       git config pull.rebase false
+      exit
 
   - name: "Install shfmt"
     command: brew install shfmt
+    exit
 
   - name: "Install jekyll"
     command: |
@@ -33,6 +35,7 @@ vscode:
     - ms-python.python
     - mervin.markdown-formatter
     - python.vscode-pylance
+    - mblode.pretty-formatter
 
 # List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
 ports:
