@@ -17,6 +17,7 @@ bash publish.sh
 1. 修改 `_data/cases.csv`
 2. 执行 `python create_cases.py`
 
-### Notes
+### Dev参考
 
 - Liquid [https://shopify.dev/api/liquid](https://shopify.dev/api/liquid)
+- Jekyll [https://jekyllrb.com/docs/](https://jekyllrb.com/docs/)
