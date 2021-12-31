@@ -7,3 +7,18 @@ permalink: /download/
 <div class="page-header">
     <h1>教学资源下载</h1>
 </div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">课件下载</h3>
+    </div>
+    <div class="panel-body">
+        <ul>
+            {% for ppt in site.data.ppt_list %}
+            <li>
+                <a href="{{ ppt.url }}">{{ ppt.chapter_id }}&nbsp;{{ ppt.chapter_name }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
