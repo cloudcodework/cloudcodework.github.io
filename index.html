@@ -16,8 +16,6 @@ title: 《人工智能算法——Python语言版》在线编程平台和案例�
             </h1>
         </div>
 
-        {% assign count = 1 %}
-
         {% for one_case in site.data.cases %}
 
         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
@@ -28,7 +26,6 @@ title: 《人工智能算法——Python语言版》在线编程平台和案例�
                 <a href="/case/{{one_case.case_id}}.html">
                     <img class="img-responsive" src="/assets/images/qrcode/{{ one_case.case_id }}.png" alt="QR_Code">
                 </a>
-                <!-- <p class="text-center"><span class="badge">序号 {{ count }}</span></p> -->
                 <p class="text-center"><span class="badge">{{ one_case.case_id }}</span></p>
                 <div class="caption">
                     <h4 class="text-center"> {{ one_case.case_name }}</h4>
@@ -38,13 +35,15 @@ title: 《人工智能算法——Python语言版》在线编程平台和案例�
                                 https://case.artificial-intelligence-algorithm.site/case/{{one_case.case_id}}.html</p>
                         </a>
                     </p>
-                </div>
-            </div>
-        </div>
-
-        {% assign count = count | plus: 1 %}
+                </div><!-- /caption -->
+            </div><!-- /thumbnail -->
+        </div><!-- /col-xs-12 col-sm-6 col-md-4 col-lg-3 -->
 
         {% endfor %}
+
+        <footer>
+            {% include footer.html %}
+        </footer>
 
     </div>
 </div>
