@@ -17,6 +17,14 @@ bash publish.sh
 1. 修改 `_data/cases.csv`
 2. 执行 `python create_cases.py`
 
+### 如何上传PPT
+
+1. PPT文件命名为 ch_<chapter_id>.pptx, 如 ch_1.pptx
+2. 上传到/downloads/ppt/目录下
+3. 添加元数据，分别编辑 /data/cases.csv 和 /data/ppt_list.csv
+4. 注意：/data/cases.csv 中ppt_url列，路径开头要加上 `/`，绝对路径
+5. 注意：/data/ppt_list.csv中的url字段，开头要加 `/`，绝对路径
+
 ### Dev参考
 
 - Liquid [https://shopify.dev/api/liquid](https://shopify.dev/api/liquid)

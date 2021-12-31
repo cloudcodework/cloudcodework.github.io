@@ -40,7 +40,17 @@ title: 《人工智能算法——Python语言版》在线编程平台和案例�
             <a type="button" class="btn btn-primary" href="{{ site.case_orgnization_url }}/{{ one_case.case_id }}/">
                 点击查看在线案例GitHub仓库
             </a>
-            <a type="button" class="btn btn-primary" href="{{ site.case_orgnization_url }}/{{ one_case.case_id }}/">
+
+            {% assign ppt_file_name = one_case.chapter_id | append: '-' | append: one_case.chapter_name | append: '.pptx' %}
+
+            {% assign download_button_class = 'btn btn-primary' %}
+            {% if one_case.ppt_url %}
+
+            {% else %}
+                {% assign download_button_class = download_button_class | append: ' disabled' %}
+            {% endif %}
+
+            <a type="button" class="{{ download_button_class }}" href="{{ one_case.ppt_url }}" download="{{ ppt_file_name }}">
                 点击下载案例资源
             </a>
         </p>
