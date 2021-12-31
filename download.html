@@ -15,9 +15,22 @@ permalink: /download/
     <div class="panel-body">
         <ul>
             {% for ppt in site.data.ppt_list %}
+
+            {% assign chapter_name = ppt.chapter_id | append: '-' | append: ppt.chapter_name %}
+            {% assign ppt_file_name = chapter_name | append: '.pptx' %}
+
+
+            {% if ppt.url %}
+                {% assign link_class = 'btn' %}
+            {% else %}
+                {% assign link_class = 'btn disabled' %}
+            {% endif %}
+
+
             <li>
-                <a href="{{ ppt.url }}">{{ ppt.chapter_id }}&nbsp;{{ ppt.chapter_name }}</a>
+                <a class="{{ link_class }}" href="{{ ppt.url }}" download="{{ ppt_file_name }}">{{ chapter_name }}</a>
             </li>
+
             {% endfor %}
         </ul>
     </div>
