@@ -19,6 +19,11 @@ tasks:
       pip install -r requirements.txt
       exit
 
+  - name: "Install Utils"
+    command: |
+      sudo apt-get update
+      sudo apt-get install -y tldr
+
   - name: "Install jekyll"
     command: |
       ruby -v
@@ -28,7 +33,7 @@ tasks:
       make -v
       gem install jekyll bundler
       bundle install
-      jekyll serve
+      jekyll serve -P 4000
 
 vscode:
   extensions:
