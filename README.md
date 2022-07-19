@@ -18,9 +18,9 @@ bash publish.sh
 2. 执行 `python create_cases.py`
 3. 注意：
 
-### 如何上传PPT
+### 如何上传教学幻灯片(PDF)
 
-1. PPT文件命名为 ch_<chapter_id>.pptx, 如 ch_1.pptx
+1. 幻灯片为PPT导出得到的PDF，文件命名为 ch_<chapter_id>.pdf, 如 ch_1.pdf
 2. 上传到/downloads/ppt/目录下
 3. 添加元数据，分别编辑 /data/cases.csv 和 /data/ppt_list.csv
 4. 注意：/data/cases.csv 中ppt_url列，路径开头要加上 `/`，绝对路径
