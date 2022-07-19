@@ -17,7 +17,7 @@ permalink: /download/
             {% for ppt in site.data.ppt_list %}
 
             {% assign chapter_name = ppt.chapter_id | append: '-' | append: ppt.chapter_name %}
-            {% assign ppt_file_name = chapter_name | append: '.pptx' %}
+            {% assign ppt_file_name = chapter_name | append: '.pdf' %}
 
             {% assign link_class = 'btn btn-link' %}
             {% if ppt.url %}
