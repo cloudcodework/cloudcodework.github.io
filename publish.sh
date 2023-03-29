@@ -12,12 +12,12 @@ fi
 
 echo ""
 
-# Clone gh-pages branch into _site/
-echo "Clone gh-pages branch into _site/ ..."
+# Clone gh_pages branch into _site/
+echo "Clone gh_pages branch into _site/ ..."
 rm -rf _site
 mkdir -p _site/
-git clone -b gh-pages "$(git config remote.origin.url)" _site
-echo "Clone gh-pages branch into _site/ done."
+git clone -b gh_pages "$(git config remote.origin.url)" _site
+echo "Clone gh_pages branch into _site/ done."
 
 echo ""
 
@@ -28,8 +28,8 @@ echo "Jekyll build, default output is _site/ done."
 
 echo ""
 
-# Push _site to gh-pages
-echo "Push _site to gh-pages ..."
+# Push _site to gh_pages
+echo "Push _site to gh_pages ..."
 wd="$(pwd)"
 cd _site || exit
 git config pull.rebase false
@@ -43,7 +43,7 @@ git commit -a -m "update"
 git status
 git push
 cd "$wd" || exit
-echo "Push _site to gh-pages done."
+echo "Push _site to gh_pages done."
 
 echo ""
 
