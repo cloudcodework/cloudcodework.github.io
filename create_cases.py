@@ -3,7 +3,7 @@
 import csv
 import qrcode
 
-host_name = "case.artificial-intelligence-algorithm.site"
+host_name = "https://gitlab.cloudcode.work/thiswind/"
 qrcode_dir = 'assets/images/qrcode'
 
 
