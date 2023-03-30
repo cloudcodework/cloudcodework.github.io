@@ -7,4 +7,3 @@ chapter_id,chapter_name,case_id,case_name,ppt_url
 案例六,分支限界法,1.7-1,0-1背包问题的分支限界算法
 案例七,分类算法,2.1-2,支持向量机（SVM）分类算法
 案例八,分类算法,2.1-3,朴素贝叶斯（Naïve Bayes）分类算法
-案例九,聚类算法,2.2-1,k-均值（k-Means）算法
