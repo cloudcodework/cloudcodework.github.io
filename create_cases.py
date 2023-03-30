@@ -18,7 +18,7 @@ def create_case_page(case_id):
 
 
 def create_qr_code(case_id):
-    url = f'https://{host_name}/case/{case_id}'
+    url = f'https://{host_name}/case/{case_id}.html'
     img = qrcode.make(url)
 
     qrcode_file_name = f'{qrcode_dir}/{case_id}.png'
