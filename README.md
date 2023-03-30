@@ -1,4 +1,6 @@
-# 基于Gitlab-CE和Gitpod的在线编程学习平台
+# 云编码在线编程学习平台 V1.0
+
+## (基于Gitlab-CE和Gitpod的在线编程学习平台)
 
 ## Notes
 
